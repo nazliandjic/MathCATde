@@ -63,7 +63,7 @@
     - else_if: ".='ℚ'"
       then: [T: "die rationalen zahlen"]      # phrase('the rational numbers' are the fraction of 2 integers)
     - else_if: ".='ℝ'"
-      then: [T: "die reelen zahlen"]      # phrase('the real numbers' can be both positive and negative)
+      then: [T: "die reellen zahlen"]      # phrase('the real numbers' can be both positive and negative)
     - else_if: ".='ℤ'"
       then: [T: "die ganzen zahlen"]      # phrase('the integers' are natural numbers above 0)
       else: [x: "text()"] # shouldn't happen
@@ -454,7 +454,7 @@
       then: [T: "log"]      # phrase(the 'log' function is used in mathematics)
     - else_if: "$Verbosity='Terse'"
       then: [spell: "'ln'"]
-      else: [T: "natürliche log"]      # phrase(the 'natural log' function is used in mathematics)
+      else: [T: "natürliche logarithmus"]      # phrase(the 'natural log' function is used in mathematics)
 
 
 - name: multi-line
@@ -665,9 +665,9 @@
   - count(*[1]/*)<=3 and # at least two cols
   - IsNode(*/*/*,'simple') # IsNode() returns true if all the nodes are simple
   replace:
-  - T: "die 1 by"      # phrase('the 1 by' 2 matrix)
+  - T: "die 1 mal"      # phrase('the 1 by' 2 matrix)
   - x: count(*/*)
-  - T: "linie"      # phrase(the 1 by 4 'row' matrix)
+  - T: "zeile"      # phrase(the 1 by 4 'row' matrix)
   - test:
       if: "$ClearSpeak_Matrix = 'Vector' or $ClearSpeak_Matrix = 'EndVector'"
       then: [T: "die 1 mal"]      # phrase('the 1 by' 2 row 'vector')
