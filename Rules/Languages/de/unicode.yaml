@@ -94,7 +94,7 @@
         else: [T: "punkt"]                      	# 	(en: 'dot', google: 'punkt')
  - "/": [T: "schrägstrich"]                     	#  0x2f	(en: 'divided by')
  - ":": [T: "doppelpunkt"]                      	#  0x3a	(en: 'colon')
- - ";": [T: "strichpunkt"]                      	#  0x3b	(en: 'semicolon')
+ - ";": [T: "semikolon"]                      	#  0x3b	(en: 'semicolon')
  - "<":                                         	#  0x3c
      - test: 
          if: "$Verbosity!='Terse'"
@@ -415,12 +415,12 @@
      - T: "nicht parallel zu"                   	# 	(en: 'not parallel to')
  - "∧": [T: "und"]                              	#  0x2227	(en: 'and')
  - "∨": [T: "oder"]                             	#  0x2228	(en: 'or')
- - "∩": [T: "schnitt mit"]                          	#  0x2229	(en: 'intersection')    #Problem: Schnittmenge wenn alleinstehend vor Bezeichnung, schnitt wenn zwischen 2 Mengen
+ - "∩": [T: "geschnitten mit"]                          	#  0x2229	(en: 'intersection')    #Problem: Schnittmenge wenn alleinstehend vor Bezeichnung, schnitt wenn zwischen 2 Mengen
  - "∪": [T: "vereinigt mit"]                      	#  0x222a	(en: 'union')               #Problem: vereinigungsmenge wenn alleinstehend vor Bezeichnung, vereinigt mit wenn zwischen 2 Mengen
  - "∫": [T: "integral"]                         	#  0x222b	(en: 'integral')
  - "∬": [T: "doppelintegral"]                   	#  0x222c	(en: 'double integral')
  - "∭": [T: "dreifachintegral"]                 	#  0x222d	(en: 'triple integral', MathPlayer: 'Dreifaches Integral', google: 'dreifachintegral')
- - "∮": [T: "randintegral"]                     	#  0x222e	(en: 'contour integral', MathPlayer: 'Kontur-Integral', google: 'konturintegral')
+ - "∮": [T: "geschlossenes integral"]                     	#  0x222e	(en: 'contour integral', MathPlayer: 'Kontur-Integral', google: 'konturintegral')
  - "∶":                                         	#  0x2236
      - test: 
          if: "$Verbosity!='Terse'"
