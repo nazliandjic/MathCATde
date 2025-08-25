@@ -278,7 +278,7 @@
   - pause: short
   - x: "*[2]"
   - pause: short
-  - T: "end exponent"
+  - T: "ende exponent"
 
 - name: AfterPower-default
   tag: power
@@ -476,7 +476,7 @@
       if: "$ClearSpeak_AbsoluteValue = 'AbsEnd'"
       then:
       - pause: short
-      - T: "end"
+      - T: "ende"
       - x: "$WordToSay"
   - pause: short
 
