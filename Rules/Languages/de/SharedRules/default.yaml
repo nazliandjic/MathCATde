@@ -573,7 +573,7 @@
       then: [T: "doppelpfeil diagonal nach unten", pause: short]      # phrase(trend is indicated by the 'double ended down diagonal arrow')
   - test:
       if: ".[contains(@notation,'actuarial')]"
-      then: [T: "versicherungsmathematische symbol", pause: short]      # phrase(the 'actuarial symbol' represents a specific quantity)
+      then: [T: "versicherungsmathematisches symbol", pause: short]      # phrase(the 'actuarial symbol' represents a specific quantity)
   - test:
       if: ".[contains(@notation,'madrub')]"
       then: [T: "arabisches faktor-symbol", pause: short]      # phrase(the 'arabic factorial symbol' represents a factorial operation)
