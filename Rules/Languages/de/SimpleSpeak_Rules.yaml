@@ -59,7 +59,7 @@
       - if: "*[2][.='2']"
         then: [T: "quadratwurzel"]        # phrase(the 'square root' of x)
       - else_if: "*[2][.='3']"
-        then: [T: "würfelwurzel"]        # phrase(the 'cube root' of x)
+        then: [T: "kubikwurzel"]        # phrase(the 'cube root' of x)
       - else: [x: "ToOrdinal(*[2])",T: "wurzel"]      # phrase(the square 'root' of 25)
       else:
       - test:
@@ -173,7 +173,7 @@
   - test:
       if: "*[2][.=2]"
       then: [T: "quadrat"]      # phrase(5 'squared' equals 25)
-      else: [T: "zum dritten Wurzel"]      # phrase(5 'cubed' equals 125)
+      else: [T: "hoch drei"]      # phrase(5 'cubed' equals 125)
 - name: function-power
   tag: power
   match:
@@ -285,7 +285,7 @@
       - test:
           if: "$Verbosity!='Terse'"
           then: [T: "das"]      # phrase('the' empty set)
-      - T: "leeres satz"      # phrase(when a set contains no value it is called an 'empty set' and this is valid)
+      - T: "leere Menge"      # phrase(when a set contains no value it is called an 'empty set' and this is valid)
     - else_if: "count(*[1]/*)=3 and *[1]/*[2][self::m:mo][.=':' or .='|' or .='∣']"
       then:
       - test:
