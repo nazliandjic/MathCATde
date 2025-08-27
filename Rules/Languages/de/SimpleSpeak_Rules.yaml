@@ -59,7 +59,7 @@
       - if: "*[2][.='2']"
         then: [T: "quadratwurzel"]        # phrase(the 'square root' of x)
       - else_if: "*[2][.='3']"
-        then: [T: "würfelwurzel"]        # phrase(the 'cube root' of x)
+        then: [T: "kubikwurzel"]        # phrase(the 'cube root' of x)
       - else: [x: "ToOrdinal(*[2])",T: "wurzel"]      # phrase(the square 'root' of 25)
       else:
       - test:
